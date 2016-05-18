@@ -2,9 +2,9 @@ import React from 'react';
 import _ from 'lodash';
 import VideoListItem from './video_list_item';
 
-const VideoList = (props) => {
-  const videoItems = _.map(props.videos, video => {
-    return <VideoListItem key={video.etag} video={video} />
+const VideoList = ({ videos, onVideoSelect }) => {
+  const videoItems = _.map(videos, video => {
+    return <VideoListItem key={video.etag} video={video} onVideoSelect={() => onVideoSelect(video)}/>
   });
 
   return(

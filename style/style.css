@@ -1,0 +1,16 @@
+.list-group-item:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.search-container {
+  margin: 15px auto;
+}
+
+.search-container input {
+  width: 100%;
+}
+
+.details h4 {
+  margin-top: 30px;
+}
